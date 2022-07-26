@@ -2,7 +2,7 @@ const list = document.getElementById("list");
 const input = document.getElementById("search");
 
 input.addEventListener("keyup", (e) => {
-  // const searchText = e.target.value.toUpperCase();
+  const searchText = e.target.value.toUpperCase();
   let listItems = list.querySelectorAll("li");
   listItems.forEach((li) => {
     if (li.innerText.toUpperCase().includes(searchText)) {
