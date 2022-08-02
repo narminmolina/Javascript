@@ -1,11 +1,11 @@
 body {
   color: white;
+  background-color: rgb(32, 35, 41);
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -17,14 +17,13 @@ body {
 }
 
 .grid-item {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  width: 600px;
-  height: 220px;
   overflow: hidden;
   background: rgb(60, 62, 68);
   border-radius: 0.5rem;
-  margin: 0.75rem;
+  margin: 10px;
   box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
     rgb(0 0 0 / 6%) 0px 2px 4px -1px;
 }
@@ -53,6 +52,14 @@ body {
   background: white;
   border-radius: 50%;
 }
+
+.status-icon.Alive {
+  background-color: green;
+}
+.Dead {
+  background-color: red;
+}
+
 h2 {
   font-size: 1.5rem;
   margin: 0px;
@@ -77,4 +84,34 @@ a {
   text-decoration: none;
   color: rgb(245, 245, 245);
   font-size: 112.5%;
+}
+input,
+select,
+.prev,
+.next {
+  display: inline;
+  border: 2px solid #63787c;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #d7dddd;
+  margin-left: 20px;
+}
+.container {
+  max-width: 1050px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+button {
+  border: 2px solid #63787c;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #d7dddd;
+}
+.more {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
