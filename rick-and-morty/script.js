@@ -111,3 +111,4 @@ async function getMoreCharacters(url) {
 }
 
 getMoreCharacters();
+

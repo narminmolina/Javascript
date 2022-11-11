@@ -11,8 +11,17 @@ let getFirstRecurring = function (input) {
       map[input[i]] = i;
     }
   }
-  return undefined
+  return undefined;
 };
 getFirstRecurring(arr1);
 
-
+let swapDimentions = function () {
+  let imgs = document.querySelectorAll("img");
+  let newDimentions = imgs.map((img) => {
+    let height = img.clientHeight;
+    let width = img.clientWidth;
+    img.clientHeight = width;
+    img.clientHeight = height;
+  });
+  return newDimentions;
+};

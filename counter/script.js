@@ -26,3 +26,5 @@ buttons.forEach((btn) => {
     value.innerHTML = count;
   });
 });
+
+
