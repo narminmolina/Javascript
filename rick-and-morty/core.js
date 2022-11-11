@@ -7,7 +7,7 @@ const select = document.querySelector("select");
 
 async function getCharacter() {
   const response = await fetch("https://rickandmortyapi.com/api/character", {
-    method: 'POST'
+    method: "GET",
   });
   const data = await response.json();
 
@@ -17,7 +17,6 @@ async function getCharacter() {
 async function getEpisode(episodeURL) {
   const response = await fetch(episodeURL);
   const data = await response.json();
-
   return data;
 }
 
@@ -26,7 +25,7 @@ async function applyCardInfo(results) {
 
   results.forEach(async (element) => {
     const episode = await getEpisode(element.episode[0]);
-
+    console.log(element);
     container.innerHTML += `
   <div class="grid-item">
    <div class="image">
